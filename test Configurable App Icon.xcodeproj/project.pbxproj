@@ -12,6 +12,12 @@
 		A5ED7BB429A29E7B0026A13E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A5ED7BB229A29E7B0026A13E /* Main.storyboard */; };
 		A5ED7BB629A29E7D0026A13E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A5ED7BB529A29E7D0026A13E /* Assets.xcassets */; };
 		A5ED7BB929A29E7D0026A13E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A5ED7BB729A29E7D0026A13E /* LaunchScreen.storyboard */; };
+		A5ED7BC729A2B14C0026A13E /* iTunesArtwork@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A5ED7BC429A2B14C0026A13E /* iTunesArtwork@2x.png */; };
+		A5ED7BC829A2B14C0026A13E /* iTunesArtwork@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = A5ED7BC529A2B14C0026A13E /* iTunesArtwork@3x.png */; };
+		A5ED7BC929A2B14C0026A13E /* iTunesArtwork@1x.png in Resources */ = {isa = PBXBuildFile; fileRef = A5ED7BC629A2B14C0026A13E /* iTunesArtwork@1x.png */; };
+		A5ED7BCE29A2B22F0026A13E /* Weather@1x.png in Resources */ = {isa = PBXBuildFile; fileRef = A5ED7BCB29A2B22E0026A13E /* Weather@1x.png */; };
+		A5ED7BCF29A2B22F0026A13E /* Weather@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = A5ED7BCC29A2B22E0026A13E /* Weather@3x.png */; };
+		A5ED7BD029A2B22F0026A13E /* Weather@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A5ED7BCD29A2B22F0026A13E /* Weather@2x.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +28,12 @@
 		A5ED7BB529A29E7D0026A13E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A5ED7BB829A29E7D0026A13E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A5ED7BBA29A29E7D0026A13E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A5ED7BC429A2B14C0026A13E /* iTunesArtwork@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "iTunesArtwork@2x.png"; sourceTree = "<group>"; };
+		A5ED7BC529A2B14C0026A13E /* iTunesArtwork@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "iTunesArtwork@3x.png"; sourceTree = "<group>"; };
+		A5ED7BC629A2B14C0026A13E /* iTunesArtwork@1x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "iTunesArtwork@1x.png"; sourceTree = "<group>"; };
+		A5ED7BCB29A2B22E0026A13E /* Weather@1x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Weather@1x.png"; sourceTree = "<group>"; };
+		A5ED7BCC29A2B22E0026A13E /* Weather@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Weather@3x.png"; sourceTree = "<group>"; };
+		A5ED7BCD29A2B22F0026A13E /* Weather@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Weather@2x.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +66,7 @@
 		A5ED7BAB29A29E7B0026A13E /* test Configurable App Icon */ = {
 			isa = PBXGroup;
 			children = (
+				A5ED7BC029A2A6AB0026A13E /* Icons */,
 				A5ED7BAC29A29E7B0026A13E /* AppDelegate.swift */,
 				A5ED7BB029A29E7B0026A13E /* ViewController.swift */,
 				A5ED7BB229A29E7B0026A13E /* Main.storyboard */,
@@ -62,6 +75,35 @@
 				A5ED7BBA29A29E7D0026A13E /* Info.plist */,
 			);
 			path = "test Configurable App Icon";
+			sourceTree = "<group>";
+		};
+		A5ED7BC029A2A6AB0026A13E /* Icons */ = {
+			isa = PBXGroup;
+			children = (
+				A5ED7BCA29A2B1CC0026A13E /* weatherIcon */,
+				A5ED7BC129A2A6B70026A13E /* BlocksIcon */,
+			);
+			path = Icons;
+			sourceTree = "<group>";
+		};
+		A5ED7BC129A2A6B70026A13E /* BlocksIcon */ = {
+			isa = PBXGroup;
+			children = (
+				A5ED7BC629A2B14C0026A13E /* iTunesArtwork@1x.png */,
+				A5ED7BC429A2B14C0026A13E /* iTunesArtwork@2x.png */,
+				A5ED7BC529A2B14C0026A13E /* iTunesArtwork@3x.png */,
+			);
+			path = BlocksIcon;
+			sourceTree = "<group>";
+		};
+		A5ED7BCA29A2B1CC0026A13E /* weatherIcon */ = {
+			isa = PBXGroup;
+			children = (
+				A5ED7BCB29A2B22E0026A13E /* Weather@1x.png */,
+				A5ED7BCD29A2B22F0026A13E /* Weather@2x.png */,
+				A5ED7BCC29A2B22E0026A13E /* Weather@3x.png */,
+			);
+			path = weatherIcon;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -123,8 +165,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				A5ED7BB929A29E7D0026A13E /* LaunchScreen.storyboard in Resources */,
+				A5ED7BC829A2B14C0026A13E /* iTunesArtwork@3x.png in Resources */,
 				A5ED7BB629A29E7D0026A13E /* Assets.xcassets in Resources */,
 				A5ED7BB429A29E7B0026A13E /* Main.storyboard in Resources */,
+				A5ED7BCF29A2B22F0026A13E /* Weather@3x.png in Resources */,
+				A5ED7BD029A2B22F0026A13E /* Weather@2x.png in Resources */,
+				A5ED7BC929A2B14C0026A13E /* iTunesArtwork@1x.png in Resources */,
+				A5ED7BCE29A2B22F0026A13E /* Weather@1x.png in Resources */,
+				A5ED7BC729A2B14C0026A13E /* iTunesArtwork@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
