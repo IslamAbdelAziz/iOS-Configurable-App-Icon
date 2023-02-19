@@ -8,48 +8,55 @@
 import UIKit
 
 class ViewController: UIViewController {
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
     }
-
-
-    @IBAction func doDefaultIcon(){
+    
+    
+    
+    private
+    func changeIcon(to iconName: String?) {
+        // 1
+        guard UIApplication.shared.supportsAlternateIcons else {
+            print("Doesn't Support")
+            
+            return
+        }
+        
+        // 2
+        UIApplication.shared.setAlternateIconName(iconName, completionHandler: { (error) in
+            // 3
+            if let error = error {
+                print("App icon failed to change due to \(error.localizedDescription)")
+            } else {
+                print("App icon changed successfully")
+            }
+        })
+    }
+    
+    
+    
+    //MARK: - Actions
+    
+    @IBAction func setDefaultIcon(){
         changeIcon(to: nil)
     }
     
-    @IBAction func doWeatherIcon(){
+    @IBAction func setWeatherIcon(){
         //  "WheatherAppIcon"
         changeIcon(to: "Weather")
-
+        
     }
     
-    @IBAction func doBlockesIcon(){
+    @IBAction func setBlocksIcon(){
         //  "blockesAPPIcon"
         changeIcon(to: "iTunesArtwork")
-
+        
     }
     
     
-    func changeIcon(to iconName: String?) {
-      // 1
-      guard UIApplication.shared.supportsAlternateIcons else {
-          print("Doesn't Support")
-
-        return
-      }
-
-      // 2
-      UIApplication.shared.setAlternateIconName(iconName, completionHandler: { (error) in
-        // 3
-        if let error = error {
-          print("App icon failed to change due to \(error.localizedDescription)")
-        } else {
-          print("App icon changed successfully")
-        }
-      })
-    }
-
+    
 }
 
